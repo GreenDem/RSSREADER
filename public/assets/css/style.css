@@ -1,0 +1,355 @@
+/* font-family: 'Raleway', sans-serif; */
+:root {
+	--main-bg-color: #d3d6de;
+	--headFootColor: #727da3;
+	--clearColor: #e6efff;
+	--accent-color: #efd283;
+	font-family: 'Raleway', sans-serif;
+}
+
+.darkMode {
+	--main-bg-color: #1c202f;
+	color: white;
+}
+.darkMode h2,
+.darkMode a,
+.darkMode i {
+	color: white !important;
+}
+#dark {
+	margin-top: 1vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2vw;
+	position: absolute;
+	top: 2vh;
+	right: 3vw;
+	font-size: 1.6em;
+}
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: var(--main-bg-color);
+}
+
+header a {
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 1.4em !important;
+	color: black;
+	margin: 0 1vw;
+}
+header {
+	height: 1vh;
+	background-color: var(--headFootColor);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 3vw;
+	font-family: 'Raleway', sans-serif;
+	border-bottom: 2px solid black;
+}
+
+#headerCat,
+#headerSettings {
+	width: 40vw;
+}
+
+.headerButtonCat {
+	font-size: 1em;
+	border: none;
+	background-color: transparent;
+}
+.headerButtonCat:hover,
+i:hover {
+	color: #d39b01;
+	/* border-bottom: 1px solid var(--accent-color); */
+	transition: 0.5s ease;
+}
+
+#headerLogo {
+	display: flex;
+	justify-self: center;
+	align-self: center;
+	width: 20vw;
+}
+
+#headerLogo img {
+	width: 18vw;
+	margin-bottom: -5vh;
+}
+
+#headerSettings {
+	display: flex;
+	justify-content: end;
+}
+/* ============== Buttons ============= */
+header i,
+header a i {
+	margin-right: 1vw;
+	font-size: 1.6em;
+}
+header i:hover,
+i:hover,
+header a i:hover {
+	/* transform: rotate(180deg); */
+	color: black;
+	transition: 0.5s ease;
+	transform: scale(1.2);
+}
+#houseBtn {
+	color: black;
+}
+header #darkBtn {
+	font-size: 2.1em;
+}
+#darkBtn:hover {
+	transform: rotate(180deg);
+}
+
+/* ================ FOOTER ================= */
+footer {
+	height: 1vh;
+	background-color: var(--headFootColor);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 3vw;
+	font-family: 'Raleway', sans-serif;
+	border-top: 2px solid black;
+	margin-bottom: 0;
+}
+#rightFooter {
+	width: 30vw;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+#rightFooter a {
+	text-decoration: none;
+	color: black;
+}
+#rightFooter a:hover {
+	color: var(--accent-color);
+	transition: 0.5s ease;
+}
+/* ================= 404 ===================== */
+#errorContainer {
+	width: 100vw;
+	/* height: 70vh; */
+	background-color: var(--main-bg-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 5vh 0;
+}
+#errorContainer img {
+	height: 80%;
+}
+#errorContainer h1,
+#errorContainer h2 {
+	background-color: rgba(255, 255, 255, 0.06);
+	padding: 1vh;
+	border-radius: 20px;
+}
+/* =============== SETTINGS ============== */
+#settingsContainer {
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+}
+#settingsContainer img {
+	width: 30vw;
+	margin-bottom: 0;
+}
+#checkboxesDiv {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#checkboxesDiv ul li {
+	list-style: none;
+}
+#settingsContainer img {
+	margin-bottom: 2vh;
+}
+#settingsContainer label,
+button,
+select {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.4em;
+}
+#btnDiv {
+	margin-top: 4vh;
+	display: flex;
+	justify-content: center;
+}
+#btnDiv button {
+	border: none;
+	background-color: var(--headFootColor);
+	color: white;
+	padding: 2vh 2vw;
+	border-radius: 20px;
+}
+#btnDiv button:hover {
+	/* border: 1px solid black; */
+	background-color: #1c202f;
+	box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+	transition: 0.5s;
+}
+/* ================== third View ================== */
+.containerName {
+	text-align: center;
+	font-size: 1.8em;
+	margin-bottom: 0;
+}
+.tripleContainer {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	justify-content: space-between;
+}
+.thirdContainer {
+	width: 30vw;
+	margin: 2vh 1vw;
+}
+.thirdContainer img {
+	width: 100%;
+	height: auto;
+	border-radius: 1vw;
+}
+.thirdContainer a {
+	text-decoration: none;
+	color: black;
+	font-family: 'Raleway', sans-serif;
+	display: flex;
+	height: 15%;
+	text-overflow: ellipsis;
+}
+.thirdContainer .article {
+	padding: 1em;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+	border-radius: 1vw;
+	height: 80vh;
+	margin: 2vh 0;
+	/* background-color: red; */
+}
+.thirdContainer .article:hover {
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
+	transition: 0.5s;
+}
+
+.thirdContainer .link {
+	text-align: end;
+}
+/* ================== full width View ================== */
+.fullWidthContainer {
+	width: 90%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	margin-top: 4vh;
+}
+.fullWidthContainer img {
+	width: 100%;
+	height: auto;
+	border-radius: 1vw;
+}
+.fullWidthContainer .article {
+	width: 30%;
+	padding: 1em;
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 1vw;
+}
+.fullWidthContainer a {
+	text-decoration: none;
+	color: black;
+	font-family: 'Raleway', sans-serif;
+}
+/* =================== mesures communes ==================== */
+.article {
+	height: 75vh;
+}
+.article h2 {
+	height: 15vh;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+}
+.date {
+	height: 3%;
+}
+.article img {
+	height: 35%;
+}
+.article {
+	overflow: hidden;
+}
+@media only screen and (max-width: 1200px) {
+	header {
+		height: 5vh;
+	}
+	.thirdContainer .article,
+	.fullWidthContainer .article {
+		height: 60vh;
+	}
+	.thirdContainer,
+	.fullWidthContainer .article {
+		width: 45%;
+	}
+	.tripleContainer,
+	.fullWidthContainer {
+		justify-content: center;
+	}
+}
+@media only screen and (max-width: 600px) {
+	header,
+	footer {
+		width: 100vw;
+		margin: 0;
+		justify-content: center;
+	}
+	header,
+	footer {
+		height: 8vh;
+	}
+	#rightFooter {
+		width: 100vw;
+	}
+	header img {
+		width: 20vw !important;
+	}
+	#headerCat a {
+		font-size: 1em !important;
+	}
+	.thirdContainer .article {
+		height: auto;
+	}
+	.thirdContainer {
+		width: 90%;
+		margin: auto;
+	}
+	.tripleContainer {
+		justify-content: center;
+	}
+	.fullWidthContainer .article {
+		width: 100%;
+		height: auto;
+	}
+	.fullWidthContainer {
+		justify-content: center;
+		width: 90%;
+		margin: auto;
+	}
+	.fullWidthContainer .article h2 {
+		height: auto;
+	}
+}

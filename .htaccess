@@ -1,0 +1,12 @@
+# Suivi des liens symboliques 
+Options +FollowSymlinks 
+
+# Activation du mod rewrite d'Apache 
+RewriteEngine On
+
+RewriteRule  ^accueil$ /controllers/tripleCtrl.php  [L]
+RewriteRule ^parametres$ /controllers/parametersCtrl.php [L]
+RewriteRule ^([A-Z]{1}[a-z]+)$ controllers/pagesCtrl.php?display=$1 [L]
+
+#Redirection 404
+ErrorDocument 404 /controllers/404Ctrl.php
